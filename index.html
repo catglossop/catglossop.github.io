@@ -53,11 +53,10 @@
   </div>
     <br>
     <p style="font-size: 1.1em; margin-top: -0.0em">Hi! I am a second year EECS PhD student at UC Berkeley working with <a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine</a>. I previously did my undergraduate degree at the University of Toronto in Engineering Science (Robotics) advised by <a href="http://asrl.utias.utoronto.ca/~tdb/" target="_blank">Tim Barfoot</a>. My research focuses on generalist robot navigation and interfacing with robots through natural language. I am also interested in mobile manipulation and pushing the boundaries of leveraging foundation models and non-robot data to improve robot learning.</p> 
-    <p style="font-size: 1.1em; margin-top: -0.0em">I will be interning at <a href=https://www.physicalintelligence.company/ target="_blank">Physical Intelligence</a> in summer 2025.</p>
 </div>
 
 <div class="right">
-  <p style="font-size: 1.1em; margin-top: -0.0em">Hi! I am a second year PhD student at UC Berkeley working with <a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine</a>. I previously did my undergraduate degree at the University of Toronto in Engineering Science (Robotics) advised by <a href="http://asrl.utias.utoronto.ca/~tdb/" target="_blank">Tim Barfoot</a>. My research focuses on generalist robot navigation and interfacing with robots through natural language. I am also interested in mobile manipulation and pushing the boundaries of leveraging foundation models and non-robot data to improve robot learning.</p><p style="font-size: 1.1em; margin-top: -0.6em">I will be interning at <a href=https://www.physicalintelligence.company/ target="_blank">Physical Intelligence</a> in summer 2025.</p>
+  <p style="font-size: 1.1em; margin-top: -0.0em">Hi! I am a second year PhD student at UC Berkeley working with <a href="https://people.eecs.berkeley.edu/~svlevine/" target="_blank">Sergey Levine</a>. I previously did my undergraduate degree at the University of Toronto in Engineering Science (Robotics) advised by <a href="http://asrl.utias.utoronto.ca/~tdb/" target="_blank">Tim Barfoot</a>. My research focuses on generalist robot navigation and interfacing with robots through natural language. I am also interested in mobile manipulation and pushing the boundaries of leveraging foundation models and non-robot data to improve robot learning.</p>
   </p>
 
 </div>
@@ -68,6 +67,108 @@
 <h2 style="margin: 1.3em 0 .8em 0">Publications</h2>
 <p> Here is a list of my publications to date. Please feel free to reach out with questions!</p>
 <ul class="collection">
+
+  <li>
+    <div class="thumb">
+      <img src="steervla_thumbnail.png" />
+    </div>
+    <div class="text">
+      <a href="https://www.arxiv.org/abs/2602.08440" target="_blank">
+        <h3>SteerVLA: Steering Vision-Language-Action Models in Long-Tail Driving Scenarios
+
+        </h3>
+      </a>
+      <p class="authors">
+        Tian Gao, Celine Tan, <b style="font-weight: 600">Catherine Glossop</b>, Timothy Gao, Jiankai Sun, Kyle Stachowicz, Shirley Wu, Oier Mees, Dorsa Sadigh, Sergey Levine, Chelsea Finn
+      </p>
+      <p class="venues">ArXiV pre-print</p>
+      <p class="buttons">
+        <a href="javascript:unhide('steervla2026tldr');">TLDR</a> | 
+        <a href="https://steervla.github.io/">Website</a>|
+        <a href="javascript:unhide('steervla2026citation');">Citation</a>
+        <div id="steervla2026tldr" class="hidden"><hr><b>TLDR:</b>We propose SteerVLA, which leverages the reasoning capabilities of VLMs to produce fine-grained language instructions that steer a vision-language-action (VLA) driving policy. Key to our method is this rich language interface between the high-level VLM and low-level VLA, which allows the high-level policy to more effectively ground its reasoning in the control outputs of the low-level policy. To provide fine-grained language supervision aligned with vehicle control, we leverage a VLM to augment existing driving data with detailed language annotations, which we find to be essential for effective reasoning and steerability. We evaluate SteerVLA on a challenging closed-loop benchmark, where it outperforms state-of-the-art methods by 4.77 points in overall driving score and by 8.04 points on a longtail subset. <br></div>
+        <div id="steervla2026citation" class="hidden">
+          <pre> @misc{gao2026steervlasteeringvisionlanguageactionmodels,
+              title={SteerVLA: Steering Vision-Language-Action Models in Long-Tail Driving Scenarios}, 
+              author={Tian Gao and Celine Tan and Catherine Glossop and Timothy Gao and Jiankai Sun and Kyle Stachowicz and Shirley Wu and Oier Mees and Dorsa Sadigh and Sergey Levine and Chelsea Finn},
+              year={2026},
+              eprint={2602.08440},
+              archivePrefix={arXiv},
+              primaryClass={cs.RO},
+              url={https://arxiv.org/abs/2602.08440}, 
+        }</pre>
+        </div>
+      </p>
+    </div>
+  </li>
+
+    <li>
+    <div class="thumb">
+      <img src="pistar06_thumbnail.png" />
+    </div>
+    <div class="text">
+      <a href="https://arxiv.org/abs/2511.14759" target="_blank">
+        <h3>π∗0.6: a VLA That Learns From Experience
+
+        </h3>
+      </a>
+      <p class="authors">
+        <b style="font-weight: 600">Physical Intelligence Team</b>
+      </p>
+      <p class="venues">ArXiV pre-print</p>
+      <p class="buttons">
+        <a href="javascript:unhide('pistar062025tldr');">TLDR</a> | 
+        <a href="https://www.pi.website/blog/pistar06">Website</a>|
+        <a href="javascript:unhide('pistar062025citation');">Citation</a>
+        <div id="pistar062025tldr" class="hidden"><hr><b>TLDR:</b>We present a general-purpose method, RL with Experience and Corrections via Advantage-conditioned Policies (RECAP), that provides for RL training of VLAs via advantage conditioning. RECAP starts by pre-training a generalist VLA with offline RL, which we call π∗0.6, that can then be specialized to attain high performance on downstream tasks through on-robot data collection. We show that the π∗0.6 model trained with the full RECAP method can fold laundry in real homes, reliably assemble boxes, and make espresso drinks using a professional espresso machine. <br></div>
+        <div id="pistar062025citation" class="hidden">
+          <pre> @misc{intelligence2025pi06vlalearnsexperience,
+                    title={$\pi^{*}_{0.6}$: a VLA That Learns From Experience}, 
+                    author={Physical Intelligence and Ali Amin and Raichelle Aniceto and Ashwin Balakrishna and Kevin Black and Ken Conley and Grace Connors and James Darpinian and Karan Dhabalia and Jared DiCarlo and Danny Driess and Michael Equi and Adnan Esmail and Yunhao Fang and Chelsea Finn and Catherine Glossop and Thomas Godden and Ivan Goryachev and Lachy Groom and Hunter Hancock and Karol Hausman and Gashon Hussein and Brian Ichter and Szymon Jakubczak and Rowan Jen and Tim Jones and Ben Katz and Liyiming Ke and Chandra Kuchi and Marinda Lamb and Devin LeBlanc and Sergey Levine and Adrian Li-Bell and Yao Lu and Vishnu Mano and Mohith Mothukuri and Suraj Nair and Karl Pertsch and Allen Z. Ren and Charvi Sharma and Lucy Xiaoyang Shi and Laura Smith and Jost Tobias Springenberg and Kyle Stachowicz and Will Stoeckle and Alex Swerdlow and James Tanner and Marcel Torne and Quan Vuong and Anna Walling and Haohuan Wang and Blake Williams and Sukwon Yoo and Lili Yu and Ury Zhilinsky and Zhiyuan Zhou},
+                    year={2025},
+                    eprint={2511.14759},
+                    archivePrefix={arXiv},
+                    primaryClass={cs.LG},
+                    url={https://arxiv.org/abs/2511.14759}, 
+          }</pre>
+        </div>
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div class="thumb">
+      <img src="omnivla_thumbnail.png" />
+    </div>
+    <div class="text">
+      <a href="https://arxiv.org/abs/2509.19480" target="_blank">
+        <h3>OmniVLA: An Omni-Modal Vision-Language-Action Model for Robot Navigation
+
+        </h3>
+      </a>
+      <p class="authors">
+        Noriaki Hirose, <b style="font-weight: 600">Catherine Glossop</b>, Dhruv Shah, Sergey Levine
+      </p>
+      <p class="venues">ICRA 2026</p>
+      <p class="buttons">
+        <a href="javascript:unhide('omnivla2025tldr');">TLDR</a> | 
+        <a href="https://omnivla-nav.github.io/">Website</a>|
+        <a href="javascript:unhide('omnivla2025citation');">Citation</a>
+        <div id="omnivla2025tldr" class="hidden"><hr><b>TLDR:</b>We introduce OmniVLA, a VLA trained with three primary goal modalities: 2D poses, egocentric images, and natural language, as well as their combinations. This encourages the policy to develop richer geometric, semantic, and visual representations. OmniVLA, achieves strong generalization to unseen environments, robustness to scarce modalities, and the ability to follow novel natural language instructions. <br></div>
+        <div id="omnivla2025citation" class="hidden">
+          <pre> @misc{hirose2025omnivlaomnimodalvisionlanguageactionmodel,
+                  title={OmniVLA: An Omni-Modal Vision-Language-Action Model for Robot Navigation}, 
+                  author={Noriaki Hirose and Catherine Glossop and Dhruv Shah and Sergey Levine},
+                  year={2025},
+                  eprint={2509.19480},
+                  archivePrefix={arXiv},
+                  primaryClass={cs.RO},
+                  url={https://arxiv.org/abs/2509.19480}, 
+          }</pre>
+        </div>
+      </p>
+    </div>
+  </li>
   <li>
     <div class="thumb">
       <img src="cast_thumbnail.png" />
@@ -114,7 +215,7 @@
       <p class="authors">
         Noriaki Hirose, Lydia Ignatova, Kyle Stachowicz, <b style="font-weight: 600">Catherine Glossop</b>, Sergey Levine, Dhruv Shah
       </p>
-      <p class="venues">ArXiV pre-print</p>
+      <p class="venues">ICRA 2026</p>
       <p class="buttons">
         <a href="javascript:unhide('logonav2025tldr');">TLDR</a> | 
         <a href="https://model-base-reannotation.github.io/">Website</a>|
